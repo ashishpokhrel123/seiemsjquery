@@ -39,4 +39,52 @@ $(document).ready(function () {
     });
 
     $('div.setup-panel div a.btn-active').trigger('click');
-});
+
+    /* static data */
+
+    const product = [{
+        "id": 1,
+        "productname":"Golden bag",
+        "price":"2000"
+    },
+    {
+    "id": 2,
+    "productname":"jean pant",
+    "price":"1500"
+    },
+    {
+    "id": 3,
+    "productname":"shoes",
+    "price":"1000"
+    }];
+
+    $('#clickcart').click(function(e){
+
+       
+        e.preventDefault();
+        var productname = "Bag";
+        var productprice = "1200";
+        var productstock = 4;
+
+        $("#productname").append(productname);
+        $("#productstock").append(productstock);
+        $("#productprice").append(productprice);
+
+
+        
+
+        
+        
+        
+     
+       
+        
+     
+
+
+       
+       
+      
+        })
+    });
+    
